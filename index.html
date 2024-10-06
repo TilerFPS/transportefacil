@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saints Transporte Fácil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Saints Transporte Fácil</h1>
+        <nav>
+            <ul>
+                <li><a href="#onibus">Ônibus</a></li>
+                <li><a href="#kombi">Kombi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="onibus">
+        <h2>Informações dos Ônibus</h2>
+        <label for="terminais-onibus">Escolha um terminal:</label>
+        <select id="terminais-onibus">
+            <option value="terminal1">Terminal A</option>
+            <option value="terminal2">Terminal B</option>
+            <option value="terminal3">Terminal C</option>
+        </select>
+        <p>Status do terminal: <span id="status-onibus">Atrasos em algumas linhas</span></p>
+    </section>
+
+    <section id="kombi">
+        <h2>Informações das Kombis</h2>
+        <label for="locais-kombi">Escolha um local:</label>
+        <select id="locais-kombi">
+            <option value="local1">Praça Central</option>
+            <option value="local2">Estação Norte</option>
+            <option value="local3">Bairro Sul</option>
+        </select>
+        <p>Status do local: <span id="status-kombi">Operação reduzida</span></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Saints Transporte Fácil</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
