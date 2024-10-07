@@ -1,3 +1,4 @@
+/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,15 +6,35 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Estilo do cabeçalho */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    position: relative;
     text-align: center;
+    padding: 20px;
+    background-color: #00539C; /* Cor de fundo do cabeçalho */
+    color: white;
 }
 
+/* Estilo para a imagem no topo da página */
+.header-image {
+    width: 100%;
+    opacity: 0.3; /* Define 30% de visibilidade */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+/* Estilo do título no cabeçalho */
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2.5em;
+}
+
+/* Estilo da navegação */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -25,31 +46,32 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
-section {
-    margin: 20px;
+/* Estilo para a seção de Ônibus */
+section#onibus {
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
+    background-color: #e1e1e1;
+    margin: 20px 0;
 }
 
-h2 {
-    color: #333;
+section#onibus h2 {
+    margin-top: 0;
 }
 
-.status {
-    font-weight: bold;
-    color: green;
+section#onibus select, section#kombi select {
+    padding: 10px;
+    font-size: 1em;
 }
 
-footer {
-    text-align: center;
+/* Estilo para a seção de Kombis */
+section#kombi {
     padding: 20px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #dcdcdc;
+    margin: 20px 0;
+}
+
+section#kombi h2 {
+    margin-top: 0;
 }
