@@ -3,11 +3,11 @@ document.getElementById('terminais-onibus').addEventListener('change', function(
     var statusOnibus = document.getElementById('status-onibus');
 
     if (terminal === 'terminal1') {
-        statusOnibus.textContent = 'Atrasos em algumas linhas';
+        statusOnibus.textContent = 'Operação suspensa';
     } else if (terminal === 'terminal2') {
-        statusOnibus.textContent = 'Operando normalmente';
+        statusOnibus.textContent = 'Operação suspensa';
     } else if (terminal === 'terminal3') {
-        statusOnibus.textContent = 'Suspenso temporariamente';
+        statusOnibus.textContent = 'Operação suspensa';
     }
 });
 
@@ -16,9 +16,9 @@ document.getElementById('locais-kombi').addEventListener('change', function() {
     var statusKombi = document.getElementById('status-kombi');
 
     if (local === 'local1') {
-        statusKombi.textContent = 'Operação reduzida';
+        statusKombi.textContent = 'Operação suspensa';
     } else if (local === 'local2') {
-        statusKombi.textContent = 'Operando normalmente';
+        statusKombi.textContent = 'Operação suspensa';
     } else if (local === 'local3') {
         statusKombi.textContent = 'Operação suspensa';
     }
